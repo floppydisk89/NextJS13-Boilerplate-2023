@@ -11,9 +11,10 @@
     "eslint:fix": "eslint --fix \"**/*.+(js|jsx|ts|tsx)\"",
     "prettier": "prettier --check \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css)\"",
     "prettier:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|css)\"",
-    "container::create": "docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres",
+    "db::container::create": "docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres",
     "db::migrate": "npx prisma migrate dev --name init",
-    "setup": "container::create && db::migrate"
+    "setup": "db::container::create && db::migrate",
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^4.3.1",
