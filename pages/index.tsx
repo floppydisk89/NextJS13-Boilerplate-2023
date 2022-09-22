@@ -36,16 +36,26 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to
+          <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <p>
           This boilerplate contains SASS support, Redux, Prisma ORM, Airbnb
           ESlint and Prettier integration
         </p>
-        <h2>Counter: {userSession.count}</h2>
-        <button onClick={() => sendIncrement()}>Add [ + ]</button>
-        <button onClick={() => sendDecrement()}>Remove [ - ]</button>
-        <button onClick={() => resetCounter()}>Reset counter</button>
+        <h2>
+          Counter:
+          {userSession.count}
+        </h2>
+        <button type="button" onClick={() => sendIncrement()}>
+          Add [ + ]
+        </button>
+        <button type="button" onClick={() => sendDecrement()}>
+          Remove [ - ]
+        </button>
+        <button type="button" onClick={() => resetCounter()}>
+          Reset counter
+        </button>
       </main>
 
       <footer className={styles.footer}>
@@ -54,7 +64,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
