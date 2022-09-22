@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
@@ -11,7 +10,7 @@ type State = {
   };
 };
 
-const Home: NextPage = () => {
+export default function Home() {
   const dispatch = useDispatch();
   const userSession = useSelector((state: State) => state.userSession);
 
@@ -63,6 +62,4 @@ const Home: NextPage = () => {
       </footer>
     </div>
   );
-};
-
-export default Home;
+}

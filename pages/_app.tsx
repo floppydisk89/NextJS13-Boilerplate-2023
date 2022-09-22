@@ -5,12 +5,10 @@ import store from '../store';
 
 import '../styles/globals.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Component {...pageProps} />
     </Provider>
   );
 }
-
-export default MyApp;

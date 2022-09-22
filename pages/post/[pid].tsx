@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-function Post() {
+export default function Post() {
   const router = useRouter();
   const { pid } = router.query;
 
@@ -13,5 +13,3 @@ function Post() {
     </div>
   );
 }
-
-export default Post;
