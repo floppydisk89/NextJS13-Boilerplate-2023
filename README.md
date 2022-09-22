@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-1. Make sure you have docker installed and run `bash yarn setup`. This script will install the project, setup Prisma, create a docker PostgreSQL container and migrate the database. A whole setup in one command.
+1. Make sure you have docker installed and run `$ yarn setup`. This script will install the project, setup Prisma, create a docker PostgreSQL container and migrate the database. A whole setup in one command.
 
 ## Deploy on Vercel
 
