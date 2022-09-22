@@ -9,7 +9,7 @@
     "lint": "next lint",
     "db::container::create": "docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres",
     "db::migrate": "npx prisma migrate dev --name init",
-    "setup": "db::container::create && db::migrate",
+    "setup": "yarn && yarn db::container::create && yarn db::migrate",
     "postinstall": "npx prisma generate"
   },
   "dependencies": {
