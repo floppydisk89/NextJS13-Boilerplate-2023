@@ -3,13 +3,13 @@
 This boilerplate contains SASS support, Redux Toolkit, Prisma ORM, Airbnb ESlint and Prettier integration.
 It was created to make your life easier and to have a starting point for any scalable project.
 
-## Note
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
 1. Make sure you have docker installed and run `$ yarn setup`. This script will install the project, setup Prisma, create a docker PostgreSQL container and migrate the database. A whole setup in one command.
+
+2. You are ready to go.
 
 ## Deploy on Vercel
 
