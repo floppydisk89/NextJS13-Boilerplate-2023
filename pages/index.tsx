@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment, clearState } from '../store/slices/userSession';
+import { useDispatch, useSelector } from 'react-redux';
+import { useLocale } from '../plugins/i18n';
+import { clearState, decrement, increment } from '../store/slices/userSession';
 import styles from '../styles/Home.module.scss';
 
 type State = {
@@ -12,6 +13,7 @@ type State = {
 
 export default function Home() {
   const dispatch = useDispatch();
+  const t: any = useLocale();
   const userSession = useSelector((state: State) => state.userSession);
 
   function sendIncrement() {
@@ -36,8 +38,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to
-          <a href="https://nextjs.org">Next.js!</a>
+          {t.hello}! Welcome to
+          <a href="https://nextjs.org"> Next.js!</a>
         </h1>
         <p>
           This boilerplate contains SASS support, Redux, Prisma ORM, Airbnb
