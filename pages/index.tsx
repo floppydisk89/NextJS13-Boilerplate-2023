@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
+import { motion } from 'framer-motion';
 import { useLocale } from '../plugins/i18n';
 import { clearState, decrement, increment } from '../store/slices/userSession';
 import styles from '../styles/Home.module.scss';
@@ -41,6 +42,7 @@ export default function Home() {
           {t.hello}! Welcome to
           <a href="https://nextjs.org"> Next.js!</a>
         </h1>
+        <motion.div layoutId="underline" />
         <p>
           This boilerplate contains SASS support, Redux, Prisma ORM, Airbnb
           ESlint and Prettier integration
