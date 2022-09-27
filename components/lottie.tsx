@@ -20,7 +20,6 @@ export default function Lottie({ animationPath }: Props) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        // path to your animation file, place it inside public folder
         path: animationPath,
       });
 
