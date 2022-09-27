@@ -29,8 +29,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Demo URLs
 
 Main url: [localhost:3000/](localhost:3000/)
+
 Framer Motion demo: [localhost:3000/framer-example](localhost:3000/framer-example)
+
 Route with params: [localhost:3000/post/writeanythinghere](localhost:3000/post/writeanythinghere)
+
 API post get: [localhost:3000/api/post](localhost:3000/api/post)
 
 ## Deploy on Vercel
