@@ -11,7 +11,7 @@ This boilerplate contains support and implementatior for:
 7. Environment variables
 8. Framer Motion (animations)
 9. E2E Testing with Cypress
-10. start-server-and-test support for testing purposes
+10. start-server-and-test support for cypress testing purposes
 11. Internationalization (i18n) + custom way of using translations
 12. One command full setup
 13. Typescript (latest)
@@ -25,6 +25,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Make sure you have docker installed and run `$ yarn setup`. This script will install the project, setup Prisma, create a docker PostgreSQL container and migrate the database. A whole setup in one command.
 
 2. You are ready to go.
+
+## Demo URLs
+
+Main url: [localhost:3000/](localhost:3000/)
+Framer Motion demo: [localhost:3000/framer-example](localhost:3000/framer-example)
+Route with params: [localhost:3000/post/writeanythinghere](localhost:3000/post/writeanythinghere)
+API post get: [localhost:3000/api/post](localhost:3000/api/post)
 
 ## Deploy on Vercel
 

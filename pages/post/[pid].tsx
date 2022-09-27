@@ -7,7 +7,7 @@ export default function Post() {
   return (
     <div>
       <p>
-        Post:
+        This is a example route that gets URL params. Post:
         {pid}
       </p>
     </div>
