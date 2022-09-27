@@ -10,19 +10,19 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/',
+        source: '/(.*)',
         headers: [
           {
             key: 'X-DNS-Prefetch-Control',
             value: 'on',
           },
           {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=1600; includeSubDomains; preload',
+            key: 'Cross-Origin-Resource-Policy',
+            value: 'same-origin',
           },
           {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
           },
           {
             key: 'X-Frame-Options',
@@ -34,7 +34,7 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
+            value: 'same-origin',
           },
         ],
       },
