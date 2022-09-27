@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import { useLocale } from '../plugins/i18n';
 import { clearState, decrement, increment } from '../store/slices/userSession';
+import Lottie from '../components/lottie';
 import styles from '../styles/Home.module.scss';
 
 type State = {
@@ -60,6 +61,8 @@ export default function Home() {
         <button type="button" onClick={() => resetCounter()}>
           Reset counter
         </button>
+
+        <Lottie animationPath="/lottie/assistant.json" />
       </main>
 
       <footer className={styles.footer}>
