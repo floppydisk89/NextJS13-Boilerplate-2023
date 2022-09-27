@@ -15,6 +15,7 @@ This boilerplate contains support and implementatior for:
 11. Internationalization (i18n) + custom way of using translations
 12. One command full setup
 13. Typescript (latest)
+14. Custom Lottie dynamic component
 
 It was created to make your life easier and to have a starting point for any scalable project.
 
