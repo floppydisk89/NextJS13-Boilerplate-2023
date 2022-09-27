@@ -28,7 +28,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Demo URLs
 
-Main url: [localhost:3000/](localhost:3000/)
+Main URL: [localhost:3000/](localhost:3000/)
 
 Framer Motion demo: [localhost:3000/framer-example](localhost:3000/framer-example)
 
