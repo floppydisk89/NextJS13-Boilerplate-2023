@@ -1,6 +1,21 @@
 # About NextJS Boilerplate 2022
 
-This boilerplate contains SASS support, Redux Toolkit, Prisma ORM, Airbnb ESlint and Prettier integration.
+This boilerplate contains support and implementatior for:
+
+1. SASS
+2. Redux Toolkit
+3. Prisma ORM
+4. Airbnb ESlint
+5. Prettier
+6. Strict CSP (security)
+7. Environment variables
+8. Framer Motion (animations)
+9. E2E Testing with Cypress
+10. start-server-and-test support for testing purposes
+11. Internationalization (i18n) + custom way of using translations
+12. One command full setup
+13. Typescript (latest)
+
 It was created to make your life easier and to have a starting point for any scalable project.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
