@@ -13,6 +13,7 @@
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless",
     "db::container::create": "docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres",
     "db::migrate": "npx prisma migrate dev --name init",
+    "db::reset": "npx prisma generate",
     "setup": "yarn && yarn db::container::create && yarn db::migrate",
     "postinstall": "npx prisma generate"
   },
