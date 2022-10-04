@@ -6,6 +6,7 @@ import { useLocale } from '../plugins/i18n';
 import { clearState, decrement, increment } from '../store/slices/userSession';
 import Lottie from '../components/lottie';
 import styles from '../styles/Home.module.scss';
+import api from '../services/api';
 
 type State = {
   userSession: {
@@ -17,6 +18,11 @@ export default function Home() {
   const dispatch = useDispatch();
   const t: any = useLocale();
   const userSession = useSelector((state: State) => state.userSession);
+
+  // api call example using custom api service
+  api.get('hello/').then(result => {
+    console.log(result);
+  });
 
   function sendIncrement() {
     dispatch(increment());
