@@ -16,6 +16,7 @@ This boilerplate contains support and implementatior for:
 12. One command full setup
 13. Typescript (latest)
 14. Custom Lottie dynamic component
+15. Custom API service with Axios
 
 It was created to make your life easier and to have a starting point for any scalable project.
 
