@@ -1,5 +1,4 @@
 import axios from 'axios';
-import host from '../data/host';
 
 const api = axios.create({
   baseURL: `${

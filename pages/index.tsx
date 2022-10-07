@@ -3,8 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
 import Lottie from '../components/lottie';
+import api from '../plugins/api';
 import { useLocale } from '../plugins/localizer';
-import api from '../services/api';
 import { clearState, decrement, increment } from '../store/slices/userSession';
 import styles from '../styles/Home.module.scss';
 
