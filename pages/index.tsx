@@ -1,12 +1,12 @@
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
-import { motion } from 'framer-motion';
-import { useLocale } from '../plugins/i18n';
-import { clearState, decrement, increment } from '../store/slices/userSession';
 import Lottie from '../components/lottie';
-import styles from '../styles/Home.module.scss';
+import { useLocale } from '../plugins/localizer';
 import api from '../services/api';
+import { clearState, decrement, increment } from '../store/slices/userSession';
+import styles from '../styles/Home.module.scss';
 
 type State = {
   userSession: {
@@ -16,7 +16,7 @@ type State = {
 
 export default function Home() {
   const dispatch = useDispatch();
-  const t: any = useLocale();
+  const t = useLocale();
   const userSession = useSelector((state: State) => state.userSession);
 
   // api call example using custom api service
@@ -46,7 +46,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          {t.hello}! Welcome to
+        {t('hello')}! Welcome to
           <a href="https://nextjs.org"> Next.js!</a>
         </h1>
         <motion.div layoutId="underline" />
