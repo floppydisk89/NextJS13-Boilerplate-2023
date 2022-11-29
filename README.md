@@ -1,4 +1,4 @@
-# About NextJS Boilerplate 2023
+# About NextJS 13 Boilerplate 2023
 
 This boilerplate contains support and implementatior for:
 
