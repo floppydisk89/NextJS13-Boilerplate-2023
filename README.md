@@ -1,4 +1,4 @@
-# About NextJS Boilerplate 2022
+# About NextJS Boilerplate 2023
 
 This boilerplate contains support and implementatior for:
 
@@ -17,6 +17,8 @@ This boilerplate contains support and implementatior for:
 13. Typescript (latest)
 14. Custom Lottie dynamic component
 15. Custom API service with Axios
+
+NextJS 13 Updated!
 
 Don't forget to setup your env file! 
 
