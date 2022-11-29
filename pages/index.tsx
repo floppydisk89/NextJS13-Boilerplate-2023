@@ -20,9 +20,14 @@ export default function Home() {
   const userSession = useSelector((state: State) => state.userSession);
 
   // api call example using custom api service
-  api.get('hello/').then(result => {
-    console.log(result);
-  });
+
+  try {
+    api.get('hello/').then(result => {
+      console.log(result);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 
   function sendIncrement() {
     dispatch(increment());
@@ -46,7 +51,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-        {t('hello')}! Welcome to
+          {t('hello')}! Welcome to
           <a href="https://nextjs.org"> Next.js!</a>
         </h1>
         <motion.div layoutId="underline" />
