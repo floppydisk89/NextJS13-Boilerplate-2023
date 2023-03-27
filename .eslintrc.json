@@ -30,6 +30,6 @@
       "warn",
       { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
     ],
-    "linebreak-style": ["ignore", "windows"]
+    "linebreak-style": [0, "windows"]
   }
 }
